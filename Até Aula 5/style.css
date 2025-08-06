@@ -1,0 +1,110 @@
+:root {
+  --cor-fundo: #0d1b1e;
+  --cor-principal: #23292c;
+  --cor-secundaria: #3a4a3d;
+  --cor-destaque: #7a8c46;
+  --cor-texto: #d9d7c5;
+  --cor-perigo: #8c2d2d;
+  --cor-sucesso: #2d8c5a;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  background-image: url("img/the-last-of-us-2-screen-shot-video-games-video-game-landscape-scenary-hd-wallpaper-preview.jpg");
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.caixa-principal{
+  background-color: var(--cor-principal);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border: 1px solid var(--cor-destaque);
+}
+
+.container-titulo {
+  border-bottom: 2px solid var(--cor-destaque);
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+}
+
+h1 {
+  color: var(--cor-destaque);
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.subtitulo {
+  font-style: italic;
+  color: var(--cor-texto);
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+.caixa-perguntas {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  min-height: 80px;
+}
+
+.caixa-alternativas {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.botao-alternativa {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-left: 4px solid var(--cor-destaque);
+}
+
+.botao-alternativa:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  transform: translateX(5px);
+}
+
+.caixa-resultado {
+  display: none;
+  background-color: var(--cor-secundaria);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border-left: 4px solid var(--cor-destaque);
+}
+
+.botao-proximo {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.botao-proximo:hover {
+  background-color: var(--cor-texto);
+}
