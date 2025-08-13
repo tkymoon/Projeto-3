@@ -10,7 +10,6 @@
 
 body {
   background-color: var(--cor-fundo);
-  background-image: url("img/the-last-of-us-2-screen-shot-video-games-video-game-landscape-scenary-hd-wallpaper-preview.jpg");
   color: var(--cor-texto);
   display: flex;
   justify-content: center;
